@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mercadito | Almacén de vinos y cervezas</title>
+    <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header> 
+<!-- NAVBAR BOOTSTRAP -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/el-mercadito-logo.png" alt="Logo" width="80" height="70" class="d-inline-block align-text-end">
+                    El Mercadito
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link inicio" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./pages/sobre-mi.html">Nosotros</a>
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        <a class="nav-link" href="./pages/proyectos.html">Catálogo</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<!-- NAVBAR BOOTSTRAP -->
+    </header>
+    <main>
+        <div class="introduccion">
+            <section class="texto-intro">
+                 <h2>Almacén de Vinos y Cervezas</h2>
+                 <p>Tu parada obligada para encontrar las mejores bebidas y acompañamientos. En El Mercadito somos especialistas en acercarte esa botella especial, la cerveza bien fría para el fin de semana o los aperitivos perfectos para tu próxima picada. Ya sea que estés planeando una cena romántica, una juntada con amigos o simplemente quieras darte un gusto, tenemos exactamente lo que buscás.¡Explorá nuestra web y descubrí todo lo que tenemos para ofrecerte!
+                 </p>
+            </section>
+            <section class="imagenes-index">
+                <figure>
+                    <a href="#nuestras-bodegas"><img  src="./assets/img-wine.webp" alt="Una botella de vino, una copa llena y uvas."></a>
+                    </figure>
+                    <figure>
+                    <img  src="./assets/img-beer.jpg" alt="Un vaso de cerveza junto a sus ingredientes.">
+                </figure>
+            </section>
+        </div>
+        <h3>Nuestras Bodegas y Fabricantes</h3>
+        <div id="nuestras-bodegas">
+            <section class="bodega-catena">
+                <article class="flip-card">
+                    <div class="inner">
+                        <div class="front">
+                            <figure>
+                                <img src="./assets/catena-img.png" alt="Logo de la bodega Catena Zapata">
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <a target="_blank" href="https://catenazapata.com/es/home-es/">CATENA ZAPATA</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="bodega-salentein">
+                <article class="flip-card">
+                    <div class="inner">
+                        <div class="front">
+                            <figure>
+                                <img src="./assets/img-salentein.jpg" alt="Logo de la bodega Salentein">
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <a target="_blank" href="https://www.bodegasalentein.com/">SALENTEIN</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="bodega-colome">
+                <article class="flip-card">
+                    <div class="inner">
+                        <div class="front">
+                            <figure>
+                                <img src="./assets/img-colome.png" alt="Logo de la bodega Colomé">
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <a target="_blank" href="https://bodegacolome.com/">COLOMÉ</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="fut">
+            <p>&copy; <span id="year"></span> El Mercadito. Todos los derechos reservados.</p> 
+            <ul class="footer-nav">
+                <li class="item-nav-foot">
+                    <a target="_blank" href="#">
+                       <img class="img-footer" src="./assets/whatsapp.png" alt="logo de Whatsapp">
+                    </a>
+                </li>
+                <li class="item-nav-foot">
+                    <a target="_blank" href="#">
+                        <img class="img-footer" src="./assets/instagram.png" alt="logo de Instagram">
+                    </a>
+                </li>
+                <li class="item-nav-foot">
+                <a target="_blank" href="#">
+                    <img class="img-footer" src="./assets/facebook.png" alt="logo de Facebook">
+                </a>
+                </li>                        
+            </ul>
+        </section>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+</html>
