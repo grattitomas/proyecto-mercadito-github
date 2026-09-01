@@ -76,7 +76,9 @@ main{
     justify-content: center;
     align-items: center;
     border-bottom: #8b5a2b 1px solid;
-    padding: 5px;
+    padding: 15px;
+    background-color: #af7844;
+    margin: 1rem 0;
 }
 
 .texto-intro{
@@ -157,6 +159,74 @@ h2, h3{
     box-sizing: border-box;
 }
 
+}
+/* CONTACTO */
+.intro-contacto{
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px repeat(4, 1fr);
+    grid-template-areas: 
+    "titulo"
+    "horarios"
+    "ubicacion"
+    "whatsapp"
+    "email"
+    ;
+}
+.titulo-contacto{
+    grid-area: titulo;
+    font-weight: 500;
+}
+.minititle-contact{
+    color: #f8f9fa;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-align: center;
+}
+.miniinfo-contact{
+    color:#f8f9fa;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.horarios{
+    grid-area: horarios;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border:#ffffff solid 1px;
+    padding: 2rem;
+    background-color: #5c162e;
+}
+.ubicacion{
+    grid-area: ubicacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:#ffffff solid 1px;
+    padding: 2rem;
+    background-color: #5c162e;
+}
+.mensaje-whatsapp{
+    grid-area: whatsapp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:#ffffff solid 1px;
+    padding: 2rem;
+    background-color: #5c162e;
+}
+.mensaje-email{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:#ffffff solid 1px;
+    padding: 2rem;
+    background-color: #5c162e;
 }
 
 
@@ -289,6 +359,11 @@ h3{
     height: 300px;
     perspective: 1000px;
 }
+.flip-card-direccion{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
 /* Aqui comienza el elemento que gira */
 .inner{
     position: relative;
@@ -299,6 +374,9 @@ h3{
 }
 /* GIRO */
 .flip-card:hover .inner{
+    transform: rotateY(180deg);
+}
+.flip-card-direccion:hover .inner{
     transform: rotateY(180deg);
 }
 .front, .back{
