@@ -1,0 +1,22 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header{
+    margin-bottom: 8rem;
+}
+nav{
+    background-color: v.$color-bg;
+    color: v.$color-headings;
+
+    .navbar-nav{
+        .nav-link{
+            background-color:v.$color-bg;
+            font-weight: 300;
+            &:hover{
+                background-color: v.$color-headings;
+                color:v.$color-bg;
+                font-weight: 500;
+            }
+        }
+    }
+}

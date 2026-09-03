@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/utilities/_variables.scss","../sass/utilities/_reset.scss","../sass/pages/_header.scss"],"names":[],"mappings":";AAAQ;AACA;AAMR;AACA;AACA;AACA;AACA;ACTA;EACI;EACA;;;AAEJ;EACI;EACA,aDLO;ECMP,kBDMM;ECLN,ODIY;;;AEXhB;EACI;;;AAEJ;EACI,kBFQM;EEPN,OFKY;;AEFR;EACI,kBFGF;EEFE;;AACA;EACI,kBFFA;EEGA,OFDN;EEEM","file":"style.css"}
