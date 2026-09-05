@@ -1,0 +1,30 @@
+/* Fuentes */
+
+/* Parrafos */
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lustria&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: "Libertinus Serif", serif; */
+
+/* Titulos */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+/* font-family: "Merriweather", serif; */
+
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+
+// --- Fuentes ---
+$font-parrafos:"Libertinus Serif", serif;
+$font-titulos:"Merriweather", serif;
+
+// --- Paleta de colores ---
+$tinto-malbec: #5C162E;
+$ambar-tostado:  #D98324;
+$madera-roble:  #8B5A2B;
+$beige-pergamino:  #F4EBD9;
+$gris-carbon:    #2B2B2B;
+
+// --- Colores adicionales detectados en el sitio (no estaban en la paleta original) ---
+$fondo-claro:  #f8f9fa;
+$blanco:    #ffffff;
+$negro:  #000000;
+$ambar-claro:  #af7844;

@@ -1,0 +1,237 @@
+@use "../utilities/variables" as v;
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.introduccion{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: v.$madera-roble 1px solid;
+    padding: 15px;
+    background-color: v.$ambar-claro;
+    margin: 1rem 0;
+}
+
+.texto-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing:border-box;
+    gap:5px;
+}
+
+.texto-intro p{
+    box-sizing: border-box;
+    padding:5px;
+    font-size: 1.5rem;
+}
+.imagenes-index img{
+    margin:10px;
+    width: 17rem;
+    height: auto;
+    border: v.$tinto-malbec solid 1px;
+    border-radius: 120px;
+}
+h2, h3{
+    width: 100%;
+    font-size: 2.3rem;
+    color: v.$tinto-malbec;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:1024px){
+    .introduccion{
+        width:auto;
+        padding: 45px;
+        display: flex;
+        flex-direction: row;
+        height:auto;
+    }
+    .introduccion p{
+        font-size: 1.5rem;
+    }
+    .introduccion h2{
+        font-size: 2.8rem;
+        color: v.$tinto-malbec;
+    }
+    .introduccion ul{
+        font-size: 1.5rem;
+    }
+    .imagenes-intro .imagen-intro{
+        height: auto;
+        width:35rem;
+        box-sizing: border-box;
+    }
+}
+// BODEGAS INDEX
+h3{
+    font-size: 2.8rem;
+    color: v.$tinto-malbec;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#nuestras-bodegas{
+    margin:0;
+    width:100%;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "catena"
+    "salentein"
+    "colome";
+    gap:12rem;
+    margin-top: 2rem;
+}
+@media (min-width:768px){
+    #nuestras-bodegas{
+        grid-template-columns:
+        repeat(2, 1fr);
+        grid-template-rows:
+        repeat(2,1fr);
+        grid-template-areas:
+        "catena salentein"
+        "colome colome";
+    }
+}
+
+@media (min-width:1024px){
+    #nuestras-bodegas{
+        gap:80px;
+        grid-template-columns:
+        repeat(3, 1fr);
+        grid-template-rows:
+        1fr;
+        grid-template-areas:
+        "catena salentein colome";
+    }
+}
+
+.nombre-bodega{
+    font-family: v.$font-titulos;
+    font-size:1.5rem;
+    font-weight: 800;
+}
+
+
+// Categorias compartidas
+.bodega-catena a, .bodega-salentein a, .bodega-colome a{
+    text-decoration:underline;
+    color: v.$gris-carbon;
+    font-weight: 350;
+    font-style: italic;
+    font-size: 2rem;
+}
+.bodega-catena, .bodega-salentein, .bodega-colome{
+    width:100%;
+    margin:50px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bodega-catena{
+    grid-area: catena;
+}
+.bodega-catena figure{
+    border: v.$gris-carbon solid 2px;
+    border-radius: 15px;
+}
+.bodega-catena figure img{
+    padding: 40px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+// SALENTEIN
+.bodega-salentein{
+    grid-area: salentein;
+}
+
+.bodega-salentein figure{
+    border-radius: 150px;
+}
+.bodega-salentein figure img{
+    border-radius: 20px;
+    width: 15rem;
+    height: auto;
+}
+
+// COLOME
+.bodega-colome{
+    grid-area: colome;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.bodega-colome figure{
+    border: v.$madera-roble 2px solid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bodega-colome figure img{
+    width: 280px;
+    height: auto;
+}
+// FIN BODEGAS
+
+// INTENTO FLIP CARD
+
+.flip-card{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.flip-card-direccion{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+// Aqui comienza el elemento que gira
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+// GIRO
+.flip-card:hover .inner{
+    transform: rotateY(180deg);
+}
+.flip-card-direccion:hover .inner{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back{
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}

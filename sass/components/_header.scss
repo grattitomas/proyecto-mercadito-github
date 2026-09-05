@@ -1,0 +1,27 @@
+@use "../utilities/variables" as v;
+
+header{
+    margin-bottom: 8rem;
+    background-color: v.$fondo-claro;
+}
+.bg-body-tertiary .navbar-brand,
+.bg-body-tertiary .nav-link{
+    color: v.$tinto-malbec;
+}
+.bg-body-tertiary .nav-link{
+    background-color: v.$fondo-claro;
+}
+.bg-body-tertiary .nav-link:hover{
+    font-weight: bold;
+    background-color: v.$tinto-malbec;
+    color: v.$blanco;
+}
+.bg-body-tertiary .nav-link:focus{
+    font-weight: bold;
+    background-color: v.$tinto-malbec;
+    color: v.$blanco;
+}
+.bg-body-tertiary .nav-link:active{
+    background-color: v.$negro;
+    color: v.$tinto-malbec;
+}
