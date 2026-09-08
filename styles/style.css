@@ -9,29 +9,24 @@ header {
   margin-bottom: 8rem;
   background-color: #f8f9fa;
 }
-
-.bg-body-tertiary .navbar-brand,
-.bg-body-tertiary .nav-link {
+header .bg-body-tertiary .container-fluid .navbar-brand {
   color: #5C162E;
 }
-
-.bg-body-tertiary .nav-link {
+header .bg-body-tertiary .container-fluid .navbar-nav .nav-link {
   background-color: #f8f9fa;
+  color: #5C162E;
 }
-
-.bg-body-tertiary .nav-link:hover {
+header .bg-body-tertiary .container-fluid .navbar-nav .nav-link:hover {
   font-weight: bold;
   background-color: #5C162E;
   color: #ffffff;
 }
-
-.bg-body-tertiary .nav-link:focus {
+header .bg-body-tertiary .container-fluid .navbar-nav .nav-link:focus {
   font-weight: bold;
   background-color: #5C162E;
   color: #ffffff;
 }
-
-.bg-body-tertiary .nav-link:active {
+header .bg-body-tertiary .container-fluid .navbar-nav .nav-link:active {
   background-color: #000000;
   color: #5C162E;
 }
@@ -43,16 +38,14 @@ header {
   width: 100%;
   gap: 1px;
 }
-
-.footer-nav {
+.fut .footer-nav {
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
   padding: 0px 15px;
   gap: 5px;
 }
-
-.img-footer {
+.fut .footer-nav .img-footer {
   width: 2.2rem;
   height: auto;
   border: #8B5A2B solid 3px;
@@ -63,10 +56,8 @@ main {
   width: 100%;
   height: auto;
 }
-
-.introduccion {
+main .introduccion {
   width: auto;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -75,9 +66,7 @@ main {
   background-color: #af7844;
   margin: 1rem 0;
 }
-
-.texto-intro {
-  display: flex;
+main .introduccion .texto-intro {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -86,14 +75,12 @@ main {
   box-sizing: border-box;
   gap: 5px;
 }
-
-.texto-intro p {
+main .introduccion .texto-intro .texto-intro p {
   box-sizing: border-box;
   padding: 5px;
   font-size: 1.5rem;
 }
-
-.imagenes-index img {
+main .introduccion .imagenes-index img {
   margin: 10px;
   width: 17rem;
   height: auto;
@@ -101,7 +88,7 @@ main {
   border-radius: 120px;
 }
 
-h2, h3 {
+h2 {
   width: 100%;
   font-size: 2.3rem;
   color: #5C162E;
@@ -193,14 +180,15 @@ h3 {
 
 .bodega-catena {
   grid-area: catena;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
-
 .bodega-catena figure {
   border: #2B2B2B solid 2px;
   border-radius: 15px;
 }
-
-.bodega-catena figure img {
+.bodega-catena img {
   padding: 40px;
   width: 300px;
   box-sizing: border-box;
@@ -208,12 +196,13 @@ h3 {
 
 .bodega-salentein {
   grid-area: salentein;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
-
 .bodega-salentein figure {
   border-radius: 150px;
 }
-
 .bodega-salentein figure img {
   border-radius: 20px;
   width: 15rem;
@@ -222,17 +211,15 @@ h3 {
 
 .bodega-colome {
   grid-area: colome;
-  display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
 }
-
 .bodega-colome figure {
   border: #8B5A2B 2px solid;
   border-radius: 15px;
   overflow: hidden;
 }
-
 .bodega-colome figure img {
   width: 280px;
   height: auto;
@@ -294,52 +281,6 @@ main {
   height: auto;
 }
 
-.introduccion {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: #8B5A2B 1px solid;
-  padding: 15px;
-  background-color: #af7844;
-  margin: 1rem 0;
-}
-
-.texto-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  gap: 5px;
-}
-
-.texto-intro p {
-  box-sizing: border-box;
-  padding: 5px;
-  font-size: 1.5rem;
-}
-
-.imagenes-intro {
-  display: flex;
-}
-
-.imagenes-intro figure {
-  display: flex;
-  gap: 100px;
-}
-
-.imagenes-intro .imagen-intro {
-  margin: 10px;
-  width: 20rem;
-  height: auto;
-  border: #5C162E solid 1px;
-  border-radius: 120px;
-}
-
 h2, h3 {
   width: 100%;
   font-size: 2.3rem;
@@ -348,30 +289,6 @@ h2, h3 {
   justify-content: center;
 }
 
-@media (min-width: 1024px) {
-  .introduccion {
-    width: auto;
-    padding: 45px;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-  .introduccion p {
-    font-size: 1.5rem;
-  }
-  .introduccion h2 {
-    font-size: 2.8rem;
-    color: #5C162E;
-  }
-  .introduccion ul {
-    font-size: 1.5rem;
-  }
-  .imagenes-intro .imagen-intro {
-    height: auto;
-    width: 35rem;
-    box-sizing: border-box;
-  }
-}
 .intro-contacto {
   height: 100%;
   width: 100%;
@@ -457,8 +374,7 @@ main {
   background-color: #af7844;
   margin: 1rem 0;
 }
-
-.texto-intro {
+.introduccion .texto-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -468,23 +384,19 @@ main {
   box-sizing: border-box;
   gap: 5px;
 }
-
-.texto-intro p {
+.introduccion .texto-intro p {
   box-sizing: border-box;
   padding: 5px;
   font-size: 1.5rem;
 }
-
-.imagenes-intro {
+.introduccion .imagenes-intro {
   display: flex;
 }
-
-.imagenes-intro figure {
+.introduccion .imagenes-intro figure {
   display: flex;
   gap: 100px;
 }
-
-.imagenes-intro .imagen-intro {
+.introduccion .imagenes-intro figure .imagen-intro {
   margin: 10px;
   width: 20rem;
   height: auto;
@@ -540,8 +452,7 @@ main {
   background-color: #af7844;
   margin: 1rem 0;
 }
-
-.texto-intro {
+.introduccion .texto-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -551,23 +462,19 @@ main {
   box-sizing: border-box;
   gap: 5px;
 }
-
-.texto-intro p {
+.introduccion .texto-intro p {
   box-sizing: border-box;
   padding: 5px;
   font-size: 1.5rem;
 }
-
-.imagenes-intro {
+.introduccion .imagenes-intro {
   display: flex;
 }
-
-.imagenes-intro figure {
+.introduccion .imagenes-intro figure {
   display: flex;
   gap: 100px;
 }
-
-.imagenes-intro .imagen-intro {
+.introduccion .imagenes-intro figure .imagen-intro {
   margin: 10px;
   width: 20rem;
   height: auto;
@@ -651,8 +558,7 @@ main {
   background-color: #af7844;
   margin: 1rem 0;
 }
-
-.texto-intro {
+.introduccion .texto-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -662,23 +568,19 @@ main {
   box-sizing: border-box;
   gap: 5px;
 }
-
-.texto-intro p {
+.introduccion .texto-intro p {
   box-sizing: border-box;
   padding: 5px;
   font-size: 1.5rem;
 }
-
-.imagenes-intro {
+.introduccion .imagenes-intro {
   display: flex;
 }
-
-.imagenes-intro figure {
+.introduccion .imagenes-intro figure {
   display: flex;
   gap: 100px;
 }
-
-.imagenes-intro .imagen-intro {
+.introduccion .imagenes-intro figure .imagen-intro {
   margin: 10px;
   width: 20rem;
   height: auto;
