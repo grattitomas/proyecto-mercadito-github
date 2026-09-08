@@ -5,6 +5,28 @@
 /* Titulos */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 /* font-family: "Merriweather", serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Libertinus Serif", serif;
+  background-color: #f8f9fa;
+  color: #2B2B2B;
+}
+
+h1, h2, h3 {
+  width: 100%;
+  font-size: 2.3rem;
+  color: #5C162E;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 header {
   margin-bottom: 8rem;
   background-color: #f8f9fa;
@@ -86,14 +108,6 @@ main .introduccion .imagenes-index img {
   height: auto;
   border: #5C162E solid 1px;
   border-radius: 120px;
-}
-
-h2 {
-  width: 100%;
-  font-size: 2.3rem;
-  color: #5C162E;
-  display: flex;
-  justify-content: center;
 }
 
 @media (min-width: 1024px) {
@@ -281,20 +295,12 @@ main {
   height: auto;
 }
 
-h2, h3 {
-  width: 100%;
-  font-size: 2.3rem;
-  color: #5C162E;
-  display: flex;
-  justify-content: center;
-}
-
 .intro-contacto {
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px repeat(4, 1fr);
+  grid-template-rows: 80px repeat(4, minmax(0, 1fr));
   grid-template-areas: "titulo" "horarios" "ubicacion" "whatsapp" "email";
 }
 
@@ -358,14 +364,8 @@ h2, h3 {
   background-color: #5C162E;
 }
 
-main {
-  width: 100%;
-  height: auto;
-}
-
 .introduccion {
   width: auto;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -375,7 +375,6 @@ main {
   margin: 1rem 0;
 }
 .introduccion .texto-intro {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -402,14 +401,6 @@ main {
   height: auto;
   border: #5C162E solid 1px;
   border-radius: 120px;
-}
-
-h2, h3 {
-  width: 100%;
-  font-size: 2.3rem;
-  color: #5C162E;
-  display: flex;
-  justify-content: center;
 }
 
 @media (min-width: 1024px) {
@@ -441,79 +432,11 @@ main {
   height: auto;
 }
 
-.introduccion {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: #8B5A2B 1px solid;
-  padding: 15px;
-  background-color: #af7844;
-  margin: 1rem 0;
-}
-.introduccion .texto-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+main {
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  gap: 5px;
-}
-.introduccion .texto-intro p {
-  box-sizing: border-box;
-  padding: 5px;
-  font-size: 1.5rem;
-}
-.introduccion .imagenes-intro {
-  display: flex;
-}
-.introduccion .imagenes-intro figure {
-  display: flex;
-  gap: 100px;
-}
-.introduccion .imagenes-intro figure .imagen-intro {
-  margin: 10px;
-  width: 20rem;
   height: auto;
-  border: #5C162E solid 1px;
-  border-radius: 120px;
 }
 
-h2, h3 {
-  width: 100%;
-  font-size: 2.3rem;
-  color: #5C162E;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 1024px) {
-  .introduccion {
-    width: auto;
-    padding: 45px;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-  .introduccion p {
-    font-size: 1.5rem;
-  }
-  .introduccion h2 {
-    font-size: 2.8rem;
-    color: #5C162E;
-  }
-  .introduccion ul {
-    font-size: 1.5rem;
-  }
-  .imagenes-intro .imagen-intro {
-    height: auto;
-    width: 35rem;
-    box-sizing: border-box;
-  }
-}
 .card-group .card img {
   width: 7rem;
 }
@@ -545,80 +468,6 @@ h2, h3 {
 main {
   width: 100%;
   height: auto;
-}
-
-.introduccion {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: #8B5A2B 1px solid;
-  padding: 15px;
-  background-color: #af7844;
-  margin: 1rem 0;
-}
-.introduccion .texto-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  gap: 5px;
-}
-.introduccion .texto-intro p {
-  box-sizing: border-box;
-  padding: 5px;
-  font-size: 1.5rem;
-}
-.introduccion .imagenes-intro {
-  display: flex;
-}
-.introduccion .imagenes-intro figure {
-  display: flex;
-  gap: 100px;
-}
-.introduccion .imagenes-intro figure .imagen-intro {
-  margin: 10px;
-  width: 20rem;
-  height: auto;
-  border: #5C162E solid 1px;
-  border-radius: 120px;
-}
-
-h2, h3 {
-  width: 100%;
-  font-size: 2.3rem;
-  color: #5C162E;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 1024px) {
-  .introduccion {
-    width: auto;
-    padding: 45px;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-  .introduccion p {
-    font-size: 1.5rem;
-  }
-  .introduccion h2 {
-    font-size: 2.8rem;
-    color: #5C162E;
-  }
-  .introduccion ul {
-    font-size: 1.5rem;
-  }
-  .imagenes-intro .imagen-intro {
-    height: auto;
-    width: 35rem;
-    box-sizing: border-box;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+h1, h2, h3{
+    width: 100%;
+    font-size: 2.3rem;
+    color: v.$tinto-malbec;
+    @include m.flex(row, center, center);
+    text-align: center;
+}

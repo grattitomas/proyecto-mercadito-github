@@ -1,4 +1,6 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../base/tipografias";
 
 header{
     margin-bottom: 8rem;
